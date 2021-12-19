@@ -1,0 +1,242 @@
+
+img {
+    margin-left: auto;
+    padding: 0 20px;
+    width: 250px;
+  }
+
+/* form-size */
+.form-group >.form-control {
+    box-shadow: none;		
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: rgb(250, 250, 250);
+    box-shadow: 0 0 8px #fff;
+}
+
+.navbar {
+    background: #2D3436;
+    border: #2D3436;
+    border-radius: 0;
+    margin-bottom: 0px;
+    height: 70px;
+}
+
+.navbar .nav li {
+    position: relative;
+}
+
+/* content spacing */
+.navbar .nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 40px;
+    justify-content: flex-end;
+}
+
+.navbar .nav li a:hover {
+    color: rgb(194, 194, 194);
+}
+
+.navbar .nav li a:focus {
+    color: rgb(122, 122, 122);
+}
+
+/* button login */
+.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-style: bold;
+    background: rgb(199, 199, 199);
+    padding-top: 10px;
+    padding-bottom: 7.5px;
+    vertical-align: middle;
+    border: none;
+}	
+.navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {		
+    color: #fff;
+    outline: none;
+    background: rgb(126, 126, 126);
+}
+
+/* Box position */
+.navbar .navbar-right li:first-child a {
+    padding-right: 10px;
+    padding-top: 20px;
+}
+/* arrow */
+.navbar ul li i {
+    font-size: 20px;
+}
+.navbar .dropdown-menu i {
+    font-size: 16px;
+    min-width: 22px;
+}
+.navbar ul.nav li.active a, .navbar ul.nav li.open > a {
+    background: transparent !important;
+}	
+.navbar >.navbar-collapse{
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+/* dropdown menu */
+.navbar .dropdown-menu {
+    background: #2D3436;
+    border-radius: 1px;
+    border-color: #2D3436;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .nav .dropdown-menu li {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    font-size: 23px;
+}
+.navbar .nav .dropdown-menu li a, .navbar .nav .dropdown-menu li a:hover, .navbar .nav .dropdown-menu li a:focus {
+    padding: 0px 2.5px;
+    line-height: normal;
+}
+
+.navbar .navbar-form {
+    border: none;
+}
+
+.navbar .dropdown-menu.form-wrapper {
+    width: 280px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    
+}
+
+/* text under box */
+.navbar .dropdown-menu.form-wrapper a {		
+    color: #ffffff;
+    padding: 0;
+    text-align: right;
+    font-size: 14px;
+}
+.navbar .dropdown-menu.form-wrapper a:hover{
+    text-decoration: underline;
+}
+
+.navbar .form-wrapper .hint-text {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.navbar .form-wrapper .form-footer {
+    text-align: right;
+    padding-top: 10px;
+    font-size: 14px;
+    
+}
+
+.navbar .form-wrapper .form-footer a:hover{
+    text-decoration: underline;
+}
+
+/* dropdown arrow */
+.navbar .navbar-right .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-inner {
+    background:#1C2331;
+}
+
+.collapse.in{
+    display:block !important;
+    max-height: initial;
+}
+
+@media all and (max-width: 1100px){
+
+    .navbar .navbar-header{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-right: auto;
+    }
+    
+    .navbar .nav li a {
+        padding: 20px 20px;
+    }
+    
+    .navbar .dropdown-menu.form-wrapper {
+        width: 200%;
+        padding: 10px 15px;
+        background: #2D3436;
+        border: none;
+    }
+
+    .navbar .form-inline {
+        display: block;
+    }
+
+    .navbar .input-group {
+        width: 100%;
+    }
+
+    .navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+        display: block;
+    }
+}
+
+
+
+ @media (max-width: 991px) {
+    
+    .navbar-header {
+        float: none;
+        width: 100%;
+    }
+    
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        background-color: #2D3436;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar .dropdown-menu.form-wrapper {
+        width:100%;
+    }   
+
+    .navbar-toggle{
+        background-color: rgb(216, 216, 216);
+    }
+}  
+
+.nav .logo{
+   width: 20%;
+   height: 20%;
+}
